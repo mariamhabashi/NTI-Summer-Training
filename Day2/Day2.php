@@ -60,20 +60,55 @@
     //         echo $x;
     //     }
     // }
-
-    $x=1;
-    do{
-        $x++;
-    echo $x;
-    }while($x<10);
-    echo "<br>";
-    for($x=1;$x<=10;$x++){
-        if($x==5){
-            continue;
-        }
-        else{
-        echo $x;
-        }
-    }
-
+    // $x=1;
+    // do{
+    //     $x++;
+    // echo $x;
+    // }while($x<10);
+    // echo "<br>";
+    // for($x=1;$x<=10;$x++){
+    //     if($x==5){
+    //         continue;
+    //     }
+    //     else{
+    //     echo $x;
+    //     }
+    // }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .input-form{
+        width: 400px;
+        margin:auto;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <form method="POST" action="result.php" class="input-form">
+        <label>Card Name</label>
+        <input type="text" name="cardName">
+        <br>
+        <label>Card Number</label>
+        <input type="text" name="cardNumber">
+        <br>
+        <label>CVV</label>
+        <input type="text" name="cvv">
+        <br>
+        <label>Email</label>
+        <input type="email" name="email">
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
