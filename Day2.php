@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -31,20 +31,49 @@
         </form>
         -->
 
-        <?php
-        $x = 1;
-        $total1 = 0; // even numbers
-        $total2 = 0; // odd numbers
-        while ($x <= 100) {
-            if ($x % 2 == 0) {
-                $total1 += $x;
-            } else {
-                $total2 += $x;
-            }
-            $x++;
-        }
-        echo "The sum of even numbers is $total1 and the sum of odd numbers is $total2";
+        <?php 
+        // $x = 1;
+        // $total1 = 0; // even numbers
+        // $total2 = 0; // odd numbers
+        // while ($x <= 100) {
+        //     if ($x % 2 == 0) {
+        //         $total1 += $x;
+        //     } else {
+        //         $total2 += $x;
+        //     }
+        //     $x++;
+        // }
+        // echo "The sum of even numbers is $total1 and the sum of odd numbers is $total2";
 
-        ?>
-    </body>
-</html>
+        // ?>
+    <!-- </body>
+</html> -->
+
+<?php
+    // $x=1;
+    // while ($x<10){
+    //     $x++;
+    //     if ($x==5){
+    //         continue;
+    //     }
+    //     else{
+    //         echo $x;
+    //     }
+    // }
+
+    $x=1;
+    do{
+        $x++;
+    echo $x;
+    }while($x<10);
+    echo "<br>";
+    for($x=1;$x<=10;$x++){
+        if($x==5){
+            continue;
+        }
+        else{
+        echo $x;
+        }
+    }
+
+?>
