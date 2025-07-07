@@ -74,6 +74,28 @@
     //     echo $x;
     //     }
     // }
+
+    // $var1="Hello World";
+    // $var2=1234;
+    // $file="contact.php";
+    // if(is_string($var1)){
+    //     echo "This is String";
+    // }else{
+    //     echo "This is not String";
+    // }
+
+    // if(is_int($var2)){
+    //     echo "This is Integer";
+    // }else{
+    //     echo "This is not Integer";
+    // }
+
+    // if(is_file($file)){
+    //     echo "This File exist";
+    // }else{
+    //     echo "This File is not exist";
+    // }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,7 +108,6 @@
     .input-form{
         width: 400px;
         margin:auto;
-        background-color: grey;
         display: flex;
         flex-direction: column;
     }
@@ -108,7 +129,6 @@
         <label>Email</label>
         <input type="email" name="email">
         <input type="submit" value="Submit">
-    </form>
-    
+    </form>    
 </body>
 </html>
