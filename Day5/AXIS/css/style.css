@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.container ul{
+    margin-left: 200px;
+}
+.right ul li{
+    padding-right: 25px;
+}
+.right li:hover a{
+    color: #ff9b50;
+}
+header {
+    background-color: black;
+    overflow: hidden;
+    height: 50px;
+}
+
+header .left {
+    width: 50%;
+    float: left;
+}
+
+header .left h3  {
+    color: white;
+    margin-top: 15px;
+}
+span {
+    color: #ff9b50;
+    font-weight: bold;
+
+}
+header .right {
+        float: left;
+width: 50%;
+}
+
+header .right ul {
+    list-style: none;}
+
+header .right ul li {
+    float: left;
+    padding-top: 15px;
+}
+
+header .right ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main h1{
+    font-size: 48px;
+      font-weight: bold;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(90, 90, 90, 0.37)), url('../imgs/nature-yuh.png');
+    background-size: cover;
+    padding: 0 5%;
+    height: 500px;
+}
+main .left{
+     margin-top: 20px;
+    max-width: 400px;
+      /* font-size: 16px;
+      line-height: 1.5; */
+      /* color: #ddd;  */
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.description{
+    margin-top: 20px;
+    max-width: 400px;
+      font-size: 16px;
+      line-height: 1.5;
+
+}
+main .right{
+    width: 350px;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+main .right h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 25px;
+    align-items: center;
+}
+main .right form input{
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      width: 100%;
+}
+.get-started{
+   background-color: orange;
+      border: none;
+      padding: 10px;
+      color: white;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+}
+.get-started:hover{
+    background-color: rgb(160, 104, 0);
+}
+.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.download-btn:hover {
+    background-color: #9e9e9ea4;
+}
