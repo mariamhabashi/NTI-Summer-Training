@@ -120,6 +120,9 @@ main .right form input{
       font-weight: bold;
       margin-top: 10px;
 }
+.get-started:hover{
+    background-color: rgb(160, 104, 0);
+}
 .download-btn {
     margin-top: 20px;
     padding: 10px 20px;
@@ -128,4 +131,7 @@ main .right form input{
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+.download-btn:hover {
+    background-color: #9e9e9ea4;
 }
