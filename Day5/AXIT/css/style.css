@@ -6,9 +6,8 @@
 }
 .container{
     width: 1170px;
-    margin-left: auto;
+    margin-left: 200px;
     margin-right: auto;
-    overflow: hidden;
 }
 .container ul{
     margin-left: 130px;
@@ -23,12 +22,14 @@ header {
     background-color: black;
     overflow: hidden;
     height: 50px;
+    position: fixed;
 }
 
 header .left {
     width: 50%;
     float: left;
     padding-top: 10px;
+
 }
 span{
     color: #FF8B38;
@@ -64,6 +65,7 @@ main{
     url("../imgs/banner.jpg");    
     background-size: cover;
     padding: 0 5%;
+    padding-top: 50px; 
 }
 main .left{
     margin-top: 20px;
