@@ -1,0 +1,28 @@
+span{
+    background-color: navy;
+    color:white;
+    width: 500px;
+    height: 150px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: block;
+}
+div{
+    background-color: orange;
+    color: white;
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    display: inline;
+}
