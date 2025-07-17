@@ -11,7 +11,7 @@
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $query = "SELECT * FROM `users` where email = '$email' AND password = '$password' LIMIT 1 ";
+    $query = "SELECT * FROM `user` where email = '$email' AND password = '$password' LIMIT 1 ";
     $result = mysqli_query($con, $query);
     if (mysqli_num_rows($result) > 0){
         $row = mysqli_fetch_assoc($result);

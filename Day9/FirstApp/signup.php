@@ -12,8 +12,8 @@ session_Start();
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $date = date( "Y-m-d H:i:s");
-      $query=  "INSERT INTO users (username, email, password, date) values ('$username', '$email', ' $password', '$date')";
+        $date = date( "Y-m-d");
+      $query=  "INSERT INTO user (username, email, password, date) values ('$username', '$email', ' $password', '$date')";
       $result = mysqli_query($con,  $query);
  header("Location:login.php");
 

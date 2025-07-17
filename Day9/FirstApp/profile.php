@@ -35,15 +35,15 @@ if (!empty($_GET) && $_GET['action'] == "edit"){
         $password = $_POST['password'];
         if ( $image_added ){
 
-            $query = "UPDATE users set  email = '$email', password = '$password', image = '$image' where id = '$id'";
+            $query = "UPDATE user set  email = '$email', password = '$password', image = '$image' where id = '$id'";
         } else{
-            $query = "UPDATE users set   email = '$email', password = '$password' where id = '$id'";
+            $query = "UPDATE user set   email = '$email', password = '$password' where id = '$id'";
         }
     
 
         $result= mysqli_query($con, $query);
 
-        $query ="SELECT * FROM users where id = '$id'";
+        $query ="SELECT * FROM user where id = '$id'";
         $result = mysqli_query($con, $query);
 
         if (mysqli_num_rows($result)>0){
