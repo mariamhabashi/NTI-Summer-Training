@@ -20,13 +20,28 @@ if ($_POST) {
 
    
 ?>
-<h1 class="pages">Signup Page</h1>
-<form action="" method="post">
-    <input type="text" name="username" placeholder="Username" />
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="password" placeholder="Password" />
-    <input type="submit" value="Sign Up" />
-</form>
+<div class="form-container">
+    <h2>Signup Page</h2>
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" class="form-input" placeholder="Enter username" required />
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-input" placeholder="******" required />
+        </div>
+
+        <input type="submit" value="Sign Up" class="form-submit" />
+    </form>
+</div>
+
 
 <?php 
 

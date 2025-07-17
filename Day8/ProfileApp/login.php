@@ -23,14 +23,26 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 ?>
 
-<h1 class="text-center">Login Page</h1>
 <?php if (isset($error)) echo $error; ?>
-<form action="" method="post">
-     <input type="text" name="username" placeholder="Username"/>
-    <input type="email" name="email" placeholder="Email" />
-    <input type="password" name="password" placeholder="password" />
-    <input type="submit"  value="Login" />
-</form>
+<div class="form-container">
+    <h2>Login Page</h2>
+    
+    <?php if (isset($error)) echo $error; // لعرض رسائل الخطأ ?>
+
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required />
+        </div>
+
+        <input type="submit" value="Login" class="form-submit" />
+    </form>
+</div>
 
 
 
