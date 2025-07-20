@@ -18,6 +18,12 @@ if (!empty($_GET) && $_GET['action'] == "edit"){
             if (!file_exists($folder)){
                 mkdir($folder, 0777, true);
             }
+            //remove old image
+            $old_image_path = "uploads/" . $_SESSION['xyz']['image'];
+            if (!empty($_SESSION['xyz']['image']) && file_exists($old_image_path)) {
+                
+                unlink($old_image_path);
+            }
 
             // Take The Name Of Image 
             $destionation = $folder . $_FILES['image']['name'];

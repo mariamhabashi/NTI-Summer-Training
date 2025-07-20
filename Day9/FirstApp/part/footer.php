@@ -1,8 +1,10 @@
-    
+    </div> <!-- Closes the "main-content" div from the header -->
 
-<footer class="text-center bg-dark">
-    Copy Right <?php echo date("Y")  ?>
-</footer>
+    <div class="clear"></div> <!-- If you use floats, this is helpful -->
+
+    <footer class="bg-dark text-center">
+        <p>Copyright © <?php echo date("Y"); ?></p>
+    </footer>
 
 </body>
 </html>
